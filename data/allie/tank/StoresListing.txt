@@ -1,0 +1,54 @@
+Experiment: wpd_test
+Subject: allie
+User: User
+Date: 09/26/2026
+Time: 1:46:14pm
+
+Object ID : RZ11(1) - RZn Processor
+ Rate     : 24414.1 Hz
+ Store ID : Note
+ Store ID : Tick
+
+Object ID : iCon(1) - Behavioral Controller Site
+ Store ID : fExp
+  Source  : Strobe input
+  Invert  : No
+  Offset  : Yes
+  Count   : No
+ Store ID : stim
+  Source  : Value change
+ Store ID : fmIn
+  Source  : Value change
+
+Object ID : Mic1 - Stream Data Storage
+ Store ID : Mic1
+  Format  : Float-32
+  Scale   : Milli
+  Rate    : 24414.1 Hz
+
+Object ID : TrialGate - User Input
+ Store ID : tri_
+  Source  : Strobe input
+  Invert  : No
+  Offset  : Yes
+  Count   : No
+
+Object ID : Tone - Audio Stimulation
+ Store ID : cue_
+  Source  : Strobe input
+  Invert  : No
+  Offset  : Yes
+  Count   : No
+
+
+Flat Listing:
+StoreID  Gizmo/Hal      Description
+cue_     Tone           epoc|
+fExp     bRig(1)        epoc|frameExposure -> [iM9]  DacOut1, +/- 5v Analog
+fmIn     bRig(1)        epoc|fmIn -> [iM9]  LogIn1, 5v Logic
+Mic1     Mic1           Streaming: ~RZn(1).Adc1
+Note     RZn(1)         Marking Notes file indexes,
+stim     bRig(1)        epoc|stimShow -> [iM9]  AdcIn1, +/- 5v Analog
+Tick     RZn(1)         Marking one second intervals.
+tri_     TrialGate      epoc|
+
